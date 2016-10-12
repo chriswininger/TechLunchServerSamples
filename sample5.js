@@ -86,11 +86,6 @@ app.get('/', [_ensureAuthenticated], function(req, res) {
 	res.render('home', { userName: req.user.name });
 });
 
-app.get('/test', function (req, res, next) {
-	console.log('!!! got the request');
-	res.send('ok');
-});
-
 app.get('/login', function(req, res) {
 	console.log('handling login page request');
 	res.render('login', {});
