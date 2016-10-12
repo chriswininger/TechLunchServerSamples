@@ -1,0 +1,8 @@
+html
+    head
+        title= 'welcome home'
+    body
+        h1= 'welcome ' + userName
+        form#logout(action='logout', method='post')
+            div
+                input(type='submit' name='logout', value='Log out')
